@@ -10,7 +10,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Replace with your actual MongoDB connection string
-const DB_URI = "mongodb://127.0.0.1:27017/REACT_BACKEND";
+const DB_URI = "mongodb://127.0.0.1:27017/<db-name>";
 mongoose.connect(DB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log("Connected to MongoDB"))
     .catch(error => console.log("Failed to connect to MongoDB:", error.message));
