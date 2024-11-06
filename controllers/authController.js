@@ -3,7 +3,7 @@ const User = require('../models/userModel');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
-const JWT_SECRET = "6f111168ce6c63a75c5bee92dc2e5f187bc828cbbd95c3547153fa01511910fbeaaa4c526849539468b27b0fa198bf558dcaec2ef7a00b330a8caf1615edcb73";
+const JWT_SECRET = "SECRET_KEY";
 
 // Signup
 const signup = async (req, res) => {
